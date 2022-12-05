@@ -1,27 +1,20 @@
 using System;
-using System.Collections.Generic;
-using cse210_batter_csharp.Casting;
 
 namespace cse210_batter_csharp.Casting
 {
     /// <summary>
-    /// The base class of all other actions.
+    /// Base class for all actors in the game.
     /// </summary>
     public class Paddle : Actor
     {
-       public Paddle(int x, int y)
-       {
-         SetImage("./Assets/bat.png");
-         SetHeight(Constants.PADDLE_HEIGHT);
-         SetWidth(Constants.PADDLE_WIDTH);
+        public Paddle(int x, int y)
+        {
+            SetImage(Constants.IMAGE_PADDLE);
 
-        int _x = x;
-        int _y = y;
-        Point position = new Point(_x, _y);
-        SetPosition(position);
-
-        SetVelocity(new Point(0, 0));
-
-       }
+            Point position = new Point(x, y);
+            SetPosition(position);
+            SetWidth(Constants.PADDLE_WIDTH);
+            SetHeight(Constants.PADDLE_HEIGHT);
+        }
     }
 }
