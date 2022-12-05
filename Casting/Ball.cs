@@ -1,39 +1,28 @@
 using System;
+using System.Collections.Generic;
 using cse210_batter_csharp.Casting;
 
-namespace cse210_batter_csharp
+namespace cse210_batter_csharp.Casting
 {
     /// <summary>
-    /// Base class for all actors in the game.
+    /// The base class of all other actions.
     /// </summary>
     public class Ball : Actor
     {
-        public Ball(int x, int y)
+       public Ball(int x, int y)
         {
             SetImage(Constants.IMAGE_BALL);
-
-            Point position = new Point(x, y);
-            SetPosition(position);
-            SetWidth(Constants.BALL_WIDTH);
             SetHeight(Constants.BALL_HEIGHT);
-            SetVelocity(new Point(6, -6));
-            MoveNext();
+            SetWidth(Constants.BALL_WIDTH);
+
+            int _x = x;
+            int _y = y;
+            Point position = new Point(_x, _y);
+            SetPosition(position);
+            
+
+            SetVelocity(new Point(5, 5));
         }
-            public void bounceHorizontal()
-            {
-                int dx = _velocity.GetX();
-                int dy = _velocity.GetY();
-
-                _velocity = new Point(-dx, dy);
-            }
-
-            public void bounceVertical()
-            {
-                int dx = _velocity.GetX();
-                int dy = _velocity.GetY();
-
-                _velocity = new Point(dx, -dy);
-            }
-
+       
     }
 }

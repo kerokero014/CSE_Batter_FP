@@ -12,13 +12,13 @@ namespace cse210_batter_csharp
         public const int DEFAULT_FONT_SIZE = 20;
         public const int DEFAULT_TEXT_OFFSET = 4;
 
-        public const string IMAGE_BRICK = "./Assets/brick-3.png";
+        public const string IMAGE_BRICK = "./Assets/brick-6.png";
         public const string IMAGE_PADDLE = "./Assets/bat.png";
         public const string IMAGE_BALL = "./Assets/ball.png";
 
-        public const string SOUND_START = "./Assets/start.wav";
-        public const string SOUND_BOUNCE = "./Assets/boing.wav";
-        public const string SOUND_OVER = "./Assets/over.wav";
+        public const string SOUND_START = "./Assets/Assets_start.wav";
+        public const string SOUND_BOUNCE = "./Assets/Assets_boing.wav";
+        public const string SOUND_OVER = "./Assets/Assets_over.wav";
 
         public const int BALL_X = MAX_X / 2;
         public const int BALL_Y = MAX_Y - 125;
