@@ -2,9 +2,6 @@ using System;
 
 namespace cse210_batter_csharp
 {
-    /// <summary>
-    /// This is a set of program wide constants to be used in other classes.
-    /// </summary>
     public static class Constants
     {
         public const int MAX_X = 800;
