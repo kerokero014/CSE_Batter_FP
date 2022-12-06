@@ -2,11 +2,7 @@ using System;
 
 namespace cse210_batter_csharp.Casting
 {
-    /// <summary>
-    /// Represents an X, Y pair.
-    /// 
-    /// This can be used for both a location and also a velocity.
-    /// </summary>
+
     public class Point
     {
         private int _x;
@@ -27,12 +23,6 @@ namespace cse210_batter_csharp.Casting
         {
             return _y;
         }
-
-        /// <summary>
-        /// Returns a new point that is the result of adding this one to the provided one.
-        /// </summary>
-        /// <param name="other"></param>
-        /// <returns></returns>
         public Point Add(Point other)
         {
             int newX = _x + other._x;
@@ -41,22 +31,12 @@ namespace cse210_batter_csharp.Casting
             return new Point(newX, newY);
         }
 
-        /// <summary>
-        /// Returns a new point that is the reversed version of this one.
-        /// Both X and Y are multiplied by -1.
-        /// </summary>
-        /// <returns></returns>
         public Point Reverse()
         {
             return Scale(-1);
         }
 
-        /// <summary>
-        /// Scales the point by the factor provided. Multiplies both X and Y
-        /// by the amount.
-        /// </summary>
-        /// <param name="factor"></param>
-        /// <returns></returns>
+
         public Point Scale(int factor)
         {
             int newX = _x * factor;
@@ -65,11 +45,7 @@ namespace cse210_batter_csharp.Casting
             return new Point(newX, newY);
         }
 
-        /// <summary>
-        /// Used by the system when you use == to compare the points.
-        /// </summary>
-        /// <param name="obj"></param>
-        /// <returns></returns>
+
         public override bool Equals(object obj)
         {
             return obj is Point point &&
