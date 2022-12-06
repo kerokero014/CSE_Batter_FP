@@ -4,9 +4,7 @@ using cse210_batter_csharp.Casting;
 
 namespace cse210_batter_csharp.Casting
 {
-    /// <summary>
-    /// The base class of all other actions.
-    /// </summary>
+
     public class Bricks : Actor
     {
       private List<Actor> _segments = new List<Actor>();
