@@ -12,7 +12,7 @@ namespace cse210_batter_csharp
         public const int DEFAULT_FONT_SIZE = 20;
         public const int DEFAULT_TEXT_OFFSET = 4;
 
-        public const string IMAGE_BRICK = "./Assets/brick-5.png";
+        public const string IMAGE_BRICK = "./Assets/brick-2.png";
         public const string IMAGE_PADDLE = "./Assets/bat.png";
         public const string IMAGE_BALL = "./Assets/teacher_fun_2.png";
 

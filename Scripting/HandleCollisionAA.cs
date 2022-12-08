@@ -27,7 +27,7 @@ namespace cse210_batter_csharp.Scripting
 
             if(_physicsService.IsCollision(_ball, _paddle))
             {
-              Console.WriteLine("Reversed");
+              Console.WriteLine("Boing");
               ReverseOnPaddle(_ball);
               _audioService.PlaySound(Constants.SOUND_BOUNCE);
             }
